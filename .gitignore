@@ -5,6 +5,7 @@
 .idea/
 .vscode/
 .vs/
+.vsconfig/
 
 # Build results
 /[Bb]uild/
