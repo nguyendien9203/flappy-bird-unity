@@ -20,7 +20,6 @@ A simple **Flappy Bird** clone built with **Unity** for learning and fun!
 - Random pipe generation
 - Score and high score tracking
 - Restart game functionality
-- Sound effects for flap, score, and hit
 
 ---
 
@@ -28,8 +27,9 @@ A simple **Flappy Bird** clone built with **Unity** for learning and fun!
 
 - **Unity** (Version 2020.x or later recommended)
 - **C#** for scripting
-- Unity UI system
-- Rigidbody2D & Collider2D for physics
+- **Rigidbody2D** & **Collider2D** for physics
+- **BoxCollider2D**, **CircleCollider2D** for collision detection
+- **MeshRenderer** & **SpriteRenderer** for rendering 2D visuals
 
 ---
 
@@ -48,3 +48,8 @@ A simple **Flappy Bird** clone built with **Unity** for learning and fun!
 ---
 
 ## 📷 Screenshots
+![Screenshot 2025-04-20 232733](https://github.com/user-attachments/assets/1daae299-ae9b-4166-a9de-b47bf0135483)
+![Screenshot 2025-04-20 232829](https://github.com/user-attachments/assets/797ec128-4c32-4ab1-adef-50016c0c6073)
+![Screenshot 2025-04-20 232807](https://github.com/user-attachments/assets/fc6fff15-9ee4-4361-8b2a-753e1a4b6095)
+![Screenshot 2025-04-20 232839](https://github.com/user-attachments/assets/446f4deb-a825-49f3-8d2b-2a6b451fe8c3)
+
