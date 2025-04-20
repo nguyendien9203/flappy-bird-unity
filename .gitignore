@@ -1,0 +1,32 @@
+# Unity generated files
+[Tt]emp/
+[Tt]emp*/ 
+.obj/
+.idea/
+.vscode/
+.vs/
+
+# Build results
+/[Bb]uild/
+[Bb]uilds/
+[Ll]ibrary/
+[Dd]ebug/
+[Dd]ebugPublic/
+[A]ssets/AssetStoreTools*
+
+# User-specific files
+/UserSettings/
+.mono/
+.idea/
+
+# Windows thumbnail cache files
+Thumbs.db
+
+# Mac system files
+.DS_Store
+
+# VS Code directory
+.vscode/
+
+# JetBrains Rider directory
+.idea/
