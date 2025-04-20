@@ -34,6 +34,23 @@ public class Player : MonoBehaviour
         InvokeRepeating(nameof(AnimateSprite), 0.15f, 0.15f);
     }
 
+    // Reset lại vị trí và hướng chuyển động mỗi khi Player được bật lên
+    private void OnEnable()
+    {
+        // Lấy vị trí hiện tại của Player
+        Vector3 position = transform.position;
+        
+        // Đảm bảo player luôn khởi đầu ở cùng 1 chiều cao, tránh lệch vị trí khi restart
+        position.y = 0f;
+
+        // Gán lại vị trí mưới cho Player
+        transform.position = position;
+
+        // Dừng hướng lại hoàn toàn
+        // Reset lại vận tốc khi bắt đầu hoặc restart lại game
+        direction = Vector3.zero;
+    }
+
     private void Update()
     {
         // Xử lý đầu vào bằng nút space hoặc nhấp chuột trái
@@ -78,5 +95,17 @@ public class Player : MonoBehaviour
 
         // Gán sprite tương ứng từ mảng vào SpriteRenderer
         spriteRenderer.sprite = sprites[spriteIndex];
+    }
+
+    // Kích hoạt khi GameObject này va chạm với 1 Collider2D khác có Is Trigger là true
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Obstacle")
+        {
+            FindFirstObjectByType<GameManager>().GameOver();
+        } else if (other.gameObject.tag == "Scoring")
+        {
+            FindAnyObjectByType<GameManager>().IncreaseScore();
+        }
     }
 }
