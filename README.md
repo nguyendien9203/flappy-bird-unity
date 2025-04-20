@@ -36,9 +36,9 @@ A simple **Flappy Bird** clone built with **Unity** for learning and fun!
 ## 🚀 How to Run
 
 1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-username/flappy-bird-unity.git
-   ```
+```bash
+git clone https://github.com/your-username/flappy-bird-unity.git
+```
 2. Open the project with Unity Hub:
 - Open Unity Hub
 - Click Open
